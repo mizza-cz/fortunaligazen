@@ -1,0 +1,42 @@
+{% extends "@components/base/base.twig" %} {% set title = "03.0_about" %} {%
+block main %}
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a href="#" class="logo">
+        <img src="images/ico/logo.svg" alt="logo" />
+      </a>
+      <nav class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Zápasy a výsledky </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Statistiky</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#"> Tabulka </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Novinky </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> O soutěži </a>
+          </li>
+        </ul>
+      </nav>
+      <form class="header-search">
+        <input type="text" class="header-search__input" />
+        <button class="header-search__btn">
+          <img src="images/ico/search.svg" alt="search" />
+        </button>
+      </form>
+      <button class="headerBtn" type="button"></button>
+    </div>
+  </div>
+</header>
+<main class="main" aria-label="Hlavní obsah">
+  {% include "@components/table-section/table-section.twig" %} {% include
+  "@components/partners/partners.twig" %}
+</main>
+{% endblock %}

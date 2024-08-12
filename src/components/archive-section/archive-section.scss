@@ -32,6 +32,10 @@
     @include media-breakpoint-down(xxl) {
       padding-top: 0;
     }
+    a.perex {
+      text-decoration: none;
+      display: block;
+    }
   }
   .slick-dots {
     display: flex;
@@ -88,7 +92,9 @@
     padding-bottom: 22px;
     margin-bottom: 22px;
   }
-
+  a.p1 {
+    text-decoration: none;
+  }
   &__img {
     width: 250px;
     min-width: 250px;
