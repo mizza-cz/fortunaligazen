@@ -1,0 +1,9 @@
+.date {
+  color: var(--color-gray);
+  font-size: 17px;
+  line-height: 19px;
+  @include media-breakpoint-down(lg) {
+    font-size: 10px;
+    line-height: 14px;
+  }
+}

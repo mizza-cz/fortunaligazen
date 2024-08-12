@@ -1,0 +1,64 @@
+.o-content {
+  &::after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+  > :first-child {
+    margin-top: 0;
+  }
+  > :last-child {
+    margin-bottom: 0;
+  }
+  .perex {
+    margin-bottom: 40px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 24px !important;
+    }
+  }
+
+  p {
+    margin-bottom: 24px;
+    font-size: 20px;
+    line-height: 24px;
+    @include media-breakpoint-down(lg) {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+  img {
+    margin: 80px auto;
+    width: 100%;
+    @include media-breakpoint-down(lg) {
+      margin: 24px auto;
+    }
+  }
+}
+
+.h1,
+.o-content h1 {
+  font-size: 60px;
+  line-height: 72px;
+  margin-top: 0;
+  @include media-breakpoint-down(lg) {
+    font-size: 25px;
+    line-height: 31px;
+  }
+}
+.perex {
+  font-size: 30px;
+  line-height: 35px;
+  @include media-breakpoint-down(lg) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.p1 {
+  font-size: 30px;
+  line-height: 35px;
+  @include media-breakpoint-down(lg) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
