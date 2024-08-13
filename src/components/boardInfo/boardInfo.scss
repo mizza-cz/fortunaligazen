@@ -1,0 +1,173 @@
+.boardInfo {
+  margin-bottom: 200px;
+  @include media-breakpoint-down(xxl) {
+    margin-bottom: 60px;
+  }
+  &__desk {
+    display: flex;
+    @include media-breakpoint-down(xxl) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &__list {
+    max-width: 50%;
+    flex: 0 0 50%;
+    @include media-breakpoint-down(xxl) {
+      flex: none;
+      max-width: 650px;
+      margin: 0 auto;
+    }
+  }
+  &__newsletter {
+    max-width: 650px;
+
+    .h1 {
+      margin-bottom: 40px;
+      @include media-breakpoint-down(xxl) {
+        text-align: center;
+      }
+      @include media-breakpoint-down(lg) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.boardInfo__news {
+  padding-left: 100px;
+  border-left: 2px solid var(--color-border);
+
+  @include media-breakpoint-down(xxl) {
+    border: none;
+    padding-left: 0;
+    margin-top: 60px;
+  }
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+  .h1 {
+    margin-bottom: 20px;
+  }
+  .p3 {
+    margin-bottom: 8px;
+  }
+  .date {
+    margin-bottom: 18px;
+  }
+  img {
+    width: 100%;
+    aspect-ratio: 763/232;
+    object-fit: cover;
+    margin-top: 20px;
+  }
+  .btn {
+    margin-top: 40px;
+  }
+}
+
+.boardInfo__form {
+  .btn {
+    @include media-breakpoint-down(md) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  input {
+    border: none;
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid var(--color-border);
+    padding-left: 72px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 23px;
+    line-height: 28px;
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position: left center;
+    outline: none;
+    padding-right: 32px;
+    @include media-breakpoint-down(lg) {
+      padding-bottom: 18px;
+      padding-top: 18px;
+      background-size: 16px;
+      padding-left: 36px;
+      padding-right: 24px;
+      font-size: 12px;
+    }
+    &::placeholder {
+      color: var(--color-dark);
+    }
+  }
+  &-name {
+    background-image: url("../images/ico/ava.svg");
+    margin-bottom: 24px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 12px;
+    }
+  }
+  &-email {
+    background-image: url("../images/ico/mail.svg");
+    margin-bottom: 48px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.form-check {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 15px;
+  line-height: 19px;
+  margin-bottom: 40px;
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 20px;
+  }
+  @include media-breakpoint-down(md) {
+    font-size: 10px;
+    line-height: 14px;
+  }
+  span {
+    display: block;
+  }
+}
+
+.form-check label {
+  cursor: pointer;
+  &::before {
+    content: "";
+    background-color: #fff;
+    border: 1px solid var(--color-dark);
+    border-radius: 5px;
+    cursor: pointer;
+    height: 23px;
+    left: 0;
+    position: absolute;
+    top: 4px;
+    width: 23px;
+  }
+}
+
+.form-check input[type="checkbox"] {
+  visibility: hidden;
+  width: 23px;
+  height: 23px;
+}
+
+.form-check input[type="checkbox"]:checked + label::before {
+  background-image: url("../images/ico/check.svg");
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 23px;
+  background-size: 10px;
+  background-position: center;
+}
+
+.form-check input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}

@@ -17,6 +17,10 @@
 }
 .topstory {
   position: relative;
+  margin-bottom: 200px;
+  @include media-breakpoint-down(xxl) {
+    margin-bottom: 60px;
+  }
   &__content {
     position: absolute;
     bottom: 90px;

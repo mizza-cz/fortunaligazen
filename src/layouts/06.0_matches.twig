@@ -1,4 +1,4 @@
-{% extends "@components/base/base.twig" %} {% set title = "04.0_archive" %} {%
+{% extends "@components/base/base.twig" %} {% set title = "06.0_matches" %} {%
 block main %}
 <header class="header">
   <div class="container">
@@ -9,7 +9,7 @@ block main %}
       <nav class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#"> Zápasy a výsledky </a>
+            <a class="nav-link active" href="#"> Zápasy a výsledky </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Statistiky</a>
@@ -18,7 +18,7 @@ block main %}
             <a class="nav-link" href="#"> Tabulka </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#"> Novinky </a>
+            <a class="nav-link" href="#"> Novinky </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#"> O soutěži </a>
@@ -36,7 +36,7 @@ block main %}
   </div>
 </header>
 <main class="main" aria-label="Hlavní obsah">
-  {% include "@components/archive-section/archive-section.twig" %} {% include
+  {% include "@components/matches-section/matches-section.twig" %} {% include
   "@components/partners/partners.twig" %}
 </main>
 {% endblock %}
