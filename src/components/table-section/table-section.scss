@@ -1,4 +1,20 @@
 .table-section {
+  &__info {
+    display: flex;
+    align-items: center;
+    li {
+      position: relative;
+    }
+    li + li {
+      padding-left: 10px;
+      margin-left: 10px;
+      &::before {
+        content: "|";
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
   &__inner {
     margin-bottom: 200px;
     @include media-breakpoint-down(xxl) {

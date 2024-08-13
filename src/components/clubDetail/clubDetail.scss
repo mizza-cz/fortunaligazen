@@ -1,0 +1,70 @@
+.clubDetail {
+  margin-bottom: 200px;
+  @include media-breakpoint-down(xxl) {
+    margin-bottom: 60px;
+  }
+  .table-section__inner {
+    margin-top: 80px;
+    @include media-breakpoint-down(lg) {
+      margin-top: 40px;
+    }
+    td:last-child,
+    th:last-child {
+      text-align: left;
+    }
+  }
+  &__box {
+    background: #f2f4f8;
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 60px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 32px;
+    }
+    img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      @include media-breakpoint-down(lg) {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+  &__box-item {
+    max-width: 50%;
+    flex: 0 0 50%;
+
+    ul {
+      display: block;
+      margin-left: 30px;
+      margin-top: 8px;
+    }
+    li + li {
+      margin-top: 4px;
+    }
+  }
+  &__box-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+
+    img {
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
+      display: block;
+      margin-bottom: 4px;
+    }
+  }
+}
