@@ -5,6 +5,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  @include media-breakpoint-down(lg) {
+    aspect-ratio: 375/288;
+    background-position: center;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -26,14 +30,25 @@
     bottom: 90px;
     color: var(--color-light);
     max-width: 920px;
+    @include media-breakpoint-down(lg) {
+      bottom: 40px;
+    }
     h1 {
       font-size: 80px;
       font-weight: 700;
       margin-bottom: 22px;
+      @include media-breakpoint-down(lg) {
+        font-size: 25px;
+        margin-bottom: 4px;
+      }
     }
     p {
       font-size: 40px;
       line-height: 48px;
+      @include media-breakpoint-down(lg) {
+        font-size: 15px;
+        line-height: 20px;
+      }
     }
   }
   .slick-dots {
@@ -48,6 +63,10 @@
     left: 0;
     padding: 0 24px;
     position: absolute;
+    @include media-breakpoint-down(lg) {
+      bottom: 24px;
+      gap: 16px;
+    }
     .slick-active button {
       background-color: var(--color-yellow);
     }
@@ -60,6 +79,10 @@
       display: block;
       border-radius: 100%;
       border: none;
+      @include media-breakpoint-down(lg) {
+        width: 10px;
+        height: 10px;
+      }
     }
   }
 }
