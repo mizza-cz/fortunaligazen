@@ -108,8 +108,14 @@
   .banWidth {
     margin-bottom: 200px;
     display: block;
+    width: 100%;
     @include media-breakpoint-down(xxl) {
       margin-bottom: 60px;
+    }
+    img{
+      width: 100%;
+      height: auto;
+      object-fit: cover;
     }
   }
   &__inner {
