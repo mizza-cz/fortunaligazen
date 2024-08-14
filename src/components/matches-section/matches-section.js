@@ -5,7 +5,7 @@ $(".matches-section__slider").slick({
   fade: true,
   cssEase: "linear",
   prevArrow:
-    '<button class="matches__btn matches__btnprev"><img src="images/ico/arrow-left.svg" loading="lazy" alt="" /></button> ',
+    '<button class="matches__btn matches__btnprev"><img src="/build/images/ico/arrow-left.svg" loading="lazy" alt="" /></button> ',
   nextArrow:
-    ' <button class="matches__btn  matches__btnnext"><img src="images/ico/arrow-right.svg" loading="lazy" alt="" /></button>',
+    ' <button class="matches__btn  matches__btnnext"><img src="/build/images/ico/arrow-right.svg" loading="lazy" alt="" /></button>',
 });
