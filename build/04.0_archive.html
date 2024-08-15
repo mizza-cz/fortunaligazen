@@ -204,35 +204,7 @@
 					</div>
 					<div class="row g-5">
 						<div class="col-xxl-9">
-							<div class="archiveItems">
-								<div class="archiveItem">
-									<div class="archiveItem__content">
-										<a href="#" class="p1">
-											Excepteur sint occaecat cupidatat non proident, sunt in culpa
-											qui officia deserunt. Excepteur sint occaecat cupidatat non
-											proident, sunt in culpa qui officia deserunt.
-										</a>
-										<div class="date mt-2">4. 8. 2024</div>
-										<a href="#" class="btn">Celý článek</a>
-									</div>
-									<div class="archiveItem__img">
-										<img src="images/content/about.png" loading="lazy" alt="post" />
-									</div>
-								</div>
-								<div class="archiveItem">
-									<div class="archiveItem__content">
-										<a href="#" class="p1">
-											Excepteur sint occaecat cupidatat non proident, sunt in culpa
-											qui officia deserunt. Excepteur sint occaecat cupidatat non
-											proident, sunt in culpa qui officia deserunt.
-										</a>
-										<div class="date mt-2">4. 8. 2024</div>
-										<a href="#" class="btn">Celý článek</a>
-									</div>
-									<div class="archiveItem__img">
-										<img src="images/content/about.png" loading="lazy" alt="post" />
-									</div>
-								</div>
+							<div class="archiveItems" id="articles">
 								<div class="archiveItem">
 									<div class="archiveItem__content">
 										<a href="#" class="p1">
@@ -290,10 +262,10 @@
 									</div>
 								</div>
 							</div>
-							<div class="btnMore">
+
+							<button type="button" class="btnMore js-fetchHTML" data-fetch-url="./_posts.html" data-fetch-container="#articles" data-fetch-limit="3" data-text="Starší články" data-text-fetching="Načítám..." data-text-error="Omluvte chybu, nepodařilo se načíst další zprávy">
 								Starší články
-								<img src="images/ico/chevron-down.svg" loading="lazy" alt="more" />
-							</div>
+							</button>
 						</div>
 						<div class="col-xxl-3">
 							<aside class="aside">

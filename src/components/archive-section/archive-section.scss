@@ -85,8 +85,6 @@
   padding-bottom: 60px;
   border-bottom: 2px solid var(--color-border);
   gap: 40px;
-  display: none;
-  visibility: hidden;
   position: relative;
   @include media-breakpoint-down(lg) {
     padding-bottom: 22px;
@@ -130,9 +128,7 @@
     }
   }
 }
-.visible:last-child {
-  border: none;
-}
+ 
 .btn {
   background-color: var(--color-yellow);
   border: none;
@@ -163,11 +159,22 @@
   gap: 16px;
   font-size: 25px;
   cursor: pointer;
-  img {
+  border: none;
+  outline: none;
+  background: transparent;
+  position: relative;
+  padding-right: 54px;
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
     width: 40px;
     height: 26px;
-    object-fit: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../images/ico/chevron-down.svg");
   }
+
   @include media-breakpoint-down(xxl) {
     justify-content: center;
     margin-bottom: 40px;
