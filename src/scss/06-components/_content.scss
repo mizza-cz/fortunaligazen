@@ -16,6 +16,66 @@
       margin-bottom: 24px !important;
     }
   }
+  blockquote {
+    display: block;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 40px;
+    margin: 40px auto;
+    font-style: italic;
+    width: 100%;
+    border-top: 2px solid var(--color-border);
+    border-bottom: 2px solid var(--color-border);
+    @include media-breakpoint-down(lg) {
+      margin: 24px auto;
+      padding-top: 24px;
+      padding-bottom: 24px;
+      font-size: 18px;
+    }
+    @include media-breakpoint-down(md) {
+      padding: 24px 16px;
+    }
+  }
+  ul {
+    color: var(--color-dark);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75;
+    margin: 32px 0;
+    > li {
+      position: relative;
+      padding-left: 18px;
+      margin-bottom: 8px;
+      &::before {
+        content: "";
+        background-color: var(--color-yellow);
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 6px;
+        height: 6px;
+      }
+      > ul {
+        margin: 16px 0 0;
+        > li {
+          &::before {
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+    a {
+      display: block;
+      text-decoration-color: transparent;
+      &:hover {
+        text-decoration-color: inherit;
+      }
+    }
+    .active {
+      font-weight: 700;
+    }
+  }
   h3 {
     margin-top: 2.5rem;
     margin-bottom: 16px;
