@@ -4,6 +4,7 @@
     position: relative;
     padding-bottom: 18px;
     padding-top: 100px;
+
     @include media-breakpoint-down(lg) {
       padding-top: 40px;
     }
@@ -53,6 +54,12 @@
   &__list {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    @include media-breakpoint-down(md) {
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
     li {
       position: relative;
       display: block;
@@ -66,12 +73,20 @@
     li + li {
       padding-left: 8px;
       margin-left: 8px;
+      @include media-breakpoint-down(md) {
+        margin-left: 0;
+        padding-left: 0;
+        margin-top: 6px;
+      }
       &::before {
         content: "|";
         position: absolute;
         left: 0;
         width: 1px;
         height: 100%;
+        @include media-breakpoint-down(md) {
+          display: none;
+        }
       }
     }
   }

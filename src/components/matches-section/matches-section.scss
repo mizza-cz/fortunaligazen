@@ -70,8 +70,12 @@
     display: flex;
     align-items: center;
     gap: 16px;
+    max-width: 40%;
+    flex: 0 0 40%;
+
     &:last-child {
       text-align: right;
+      justify-content: flex-end;
     }
   }
   &__team-name {
@@ -112,7 +116,7 @@
     @include media-breakpoint-down(xxl) {
       margin-bottom: 60px;
     }
-    img{
+    img {
       width: 100%;
       height: auto;
       object-fit: cover;
