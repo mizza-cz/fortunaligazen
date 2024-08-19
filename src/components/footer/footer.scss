@@ -34,15 +34,18 @@
     justify-content: center;
     gap: 120px;
     margin-bottom: 64px;
+    align-items: center;
     @include media-breakpoint-down(lg) {
-      gap: 40px;
+      gap: 36px;
       margin-bottom: 40px;
     }
     a {
       display: block;
       height: 48px;
+      width: 48px;
       @include media-breakpoint-down(lg) {
-        height: 26px;
+        height: 24px;
+        width: 24px;
       }
       img {
         width: 100%;

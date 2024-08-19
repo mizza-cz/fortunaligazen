@@ -39,9 +39,10 @@
   }
   ul {
     color: var(--color-dark);
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 133%;
     font-weight: 400;
-    line-height: 1.75;
+
     margin: 32px 0;
     > li {
       position: relative;
@@ -82,8 +83,8 @@
   }
   p {
     margin-bottom: 24px;
-    font-size: 20px;
-    line-height: 2rem;
+    font-size: 18px;
+    line-height: 133%;
     @include media-breakpoint-down(lg) {
       font-size: 12px;
       line-height: 16px;
@@ -100,8 +101,8 @@
 
 .h1,
 .o-content h1 {
-  font-size: 60px;
-  line-height: 72px;
+  font-size: 48px;
+  line-height: 110%;
   margin-top: 0;
   @include media-breakpoint-down(lg) {
     font-size: 25px;
@@ -110,7 +111,7 @@
 }
 .h2,
 .o-content h2 {
-  font-size: 40px;
+  font-size: 32px;
   line-height: 100%;
   @include media-breakpoint-down(lg) {
     font-size: 22px;
@@ -118,7 +119,7 @@
 }
 .h3,
 .o-content h3 {
-  font-size: 32px;
+  font-size: 28px;
   line-height: 100%;
   @include media-breakpoint-down(lg) {
     font-size: 20px;
@@ -133,8 +134,8 @@
   }
 }
 .perex {
-  font-size: 30px;
-  line-height: 35px;
+  font-size: 26px;
+  line-height: 32px;
   @include media-breakpoint-down(lg) {
     font-size: 18px;
     line-height: 24px;
@@ -142,8 +143,8 @@
 }
 
 .p1 {
-  font-size: 30px;
-  line-height: 35px;
+  font-size: 26px;
+  line-height: 32px;
   @include media-breakpoint-down(lg) {
     font-size: 18px;
     line-height: 24px;

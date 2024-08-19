@@ -41,9 +41,9 @@
       border: none;
     }
     td {
-      font-size: 30px;
+      font-size: 24px;
       line-height: 115%;
-      padding: 20px 0px;
+      padding: 16px 0px;
       @include media-breakpoint-down(md) {
         font-size: 12px;
         padding: 10px 0;

@@ -35,7 +35,7 @@
   }
 
   &__date {
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     line-height: 24px;
     margin-bottom: 20px;
@@ -53,17 +53,19 @@
     height: 106px;
     min-width: 128px;
     background-color: var(--color-yellow);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    text-align: center;
     font-weight: 700;
     font-size: 56px;
     text-decoration-color: transparent;
+    line-height: 2;
+    align-content: center;
     @include media-breakpoint-down(md) {
       width: 55px;
       min-width: 55px;
       height: 45px;
       font-size: 23px;
+      line-height: 2.2;
     }
   }
   &__team {
@@ -79,8 +81,8 @@
     }
   }
   &__team-name {
-    font-size: 22px;
-    line-height: 27px;
+    font-size: 20px;
+    line-height: 25px;
     max-width: 154px;
     @include media-breakpoint-down(md) {
       font-size: 10px;
@@ -155,7 +157,7 @@
 
   &__round {
     text-align: center;
-    font-size: 35px;
+    font-size: 30px;
     margin-bottom: 60px;
     width: 100%;
     @include media-breakpoint-down(xxl) {
