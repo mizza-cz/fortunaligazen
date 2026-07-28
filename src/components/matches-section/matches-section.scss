@@ -35,14 +35,11 @@
   }
 
   &__date {
-    font-size: 18px;
+    font-size: 13px;
     text-align: center;
-    line-height: 24px;
+    line-height: 16px;
     margin-bottom: 20px;
-    @include media-breakpoint-down(md) {
-      font-size: 8px;
-      line-height: 12px;
-    }
+    font-weight: 500;
   }
   &__inner {
     display: flex;
@@ -50,16 +47,17 @@
     justify-content: space-between;
   }
   &__result {
-    height: 106px;
-    min-width: 128px;
-    background-color: var(--color-yellow);
+    height: 86px;
+    min-width: 100px;
+    background-color: var(--color-brand);
     display: block;
     text-align: center;
     font-weight: 700;
-    font-size: 56px;
+    font-size: 36px;
     text-decoration-color: transparent;
     line-height: 2;
     align-content: center;
+    color: var(--color-light);
     @include media-breakpoint-down(md) {
       width: 55px;
       min-width: 55px;
@@ -81,13 +79,15 @@
     }
   }
   &__team-name {
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 14px;
+    line-height: 18px;
     max-width: 154px;
-    @include media-breakpoint-down(md) {
-      font-size: 10px;
-      line-height: 14px;
-    }
+    font-weight: 700;
+
+    // @include media-breakpoint-down(md) {
+    //   font-size: 10px;x
+    //   line-height: 14px;
+    // }
   }
   &__team-logo {
     width: 106px;
@@ -179,7 +179,8 @@
       background-color: var(--color-light);
     }
     &-num {
-      font-size: 16px;
+      font-size: 13px;
+      font-weight: 700;
       margin-bottom: 4px;
       @include media-breakpoint-down(lg) {
         font-size: 8px;
@@ -188,15 +189,16 @@
     &-item {
       background-color: var(--color-yellow);
       border-radius: 10px;
-      font-size: 16px;
-      font-weight: 700;
+      font-size: 12px;
+      font-weight: 500;
       min-width: 5rem;
+      font-family: var(--font-display);
       line-height: normal;
-      padding: 6px 6px 2px;
+      padding: 4px 6px 4px;
       @include media-breakpoint-down(lg) {
         font-size: 10px;
         min-width: 3rem;
-        padding: 4px 5px 2px;
+        padding: 4px 5px 4px;
       }
     }
   }
@@ -204,13 +206,10 @@
 
 .matches-section {
   &__link {
-    margin: 100px auto 0;
-    @include media-breakpoint-down(xl) {
-      margin-top: 34px;
-    }
+    margin: 48px auto 0;
   }
   .banWidth {
-    margin-bottom: 200px;
+    margin-bottom: 140px;
     display: block;
     width: 100%;
     @include media-breakpoint-down(xxl) {
@@ -223,15 +222,9 @@
     }
   }
   &__inner {
-    margin-bottom: 200px;
+    margin-bottom: 140px;
     @include media-breakpoint-down(xxl) {
       margin-bottom: 60px;
-    }
-    .h1 {
-      margin-bottom: 80px;
-      @include media-breakpoint-down(xxl) {
-        margin-bottom: 32px;
-      }
     }
   }
 
@@ -255,8 +248,8 @@
 
   &__round {
     text-align: center;
-    font-size: 30px;
-    margin-bottom: 60px;
+    font-size: 20px;
+    margin-bottom: 48px;
     width: 100%;
     @include media-breakpoint-down(xxl) {
       margin-bottom: 0;
@@ -305,4 +298,7 @@
     background-color: var(--color-dark);
     color: var(--color-yellow);
   }
+}
+.matches-section__slide-content .matchesItem__team-name {
+  max-width: 100px;
 }

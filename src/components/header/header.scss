@@ -1,7 +1,18 @@
 .header {
-  background-color: var(--color-yellow);
+  background-color: var(--color-brand);
   position: relative;
   z-index: 999;
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 20%;
+    background-image: url("../images/content/header-bg.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    height: 100%;
+  }
   &__inner {
     display: flex;
     align-items: center;
@@ -15,8 +26,8 @@
     }
   }
   .logo {
-    width: 260px;
-    height: 24px;
+    width: 250px;
+    height: 42px;
     display: block;
     @include media-breakpoint-down(lg) {
       height: 18px;
@@ -78,7 +89,7 @@
   }
   @include media-breakpoint-down(xl) {
     flex-direction: column;
-    background: rgba(#ffdb01, 0.95);
+    background: var(--color-brand);
     align-items: flex-start;
     padding-left: 24px;
     padding-bottom: 32px;
@@ -97,12 +108,14 @@
   text-decoration-color: transparent;
   transition: all 0.3s;
   border-bottom: 2px solid transparent;
+  font-family: var(--font-display);
+  color: #260c60;
+  font-weight: 600;
   &:hover {
-    border-bottom: 2px solid var(--color-dark);
+    border-bottom: 2px solid #260c60;
   }
   &.active {
-    font-weight: 700;
-    border-bottom: 2px solid var(--color-dark);
+    border-bottom: 2px solid #260c60;
   }
 }
 
