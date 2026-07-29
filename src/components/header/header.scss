@@ -7,11 +7,14 @@
     position: absolute;
     right: 0;
     width: 20%;
-    background-image: url("../images/content/header-bg.png");
+    background: url("../images/content/pattern_header.png");
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: left;
     background-size: cover;
     height: 100%;
+    @include media-breakpoint-down(xl) {
+      display: none;
+    }
   }
   &__inner {
     display: flex;
@@ -27,10 +30,8 @@
   }
   .logo {
     width: 250px;
-    height: 42px;
     display: block;
     @include media-breakpoint-down(lg) {
-      height: 18px;
       width: 210px;
     }
     img {
