@@ -110,13 +110,14 @@
   transition: all 0.3s;
   border-bottom: 2px solid transparent;
   font-family: var(--font-display);
-  color: #260c60;
+  color: var(--color-light);
   font-weight: 600;
   &:hover {
-    border-bottom: 2px solid #260c60;
+    color: var(--color-yellow);
+    border-bottom: 2px solid var(--color-yellow);
   }
   &.active {
-    border-bottom: 2px solid #260c60;
+    border-bottom: 2px solid var(--color-yellow);
   }
 }
 
